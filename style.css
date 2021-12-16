@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2? family = Montserrat: wght @ 100 & display = swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing:border-box;
+   font-family:"Montserrat",sans-serif;
+    list-style:none;  
+}
+header{
+    display:flex;
+    justify-content:space-around;
+    width: 100%;
+    height: 6vh;
+    position: fixed;
+    z-index: 10;
+    background-color: #fff;
+    align-items: center;  
+}
+li{
+    width: 3rem;
+}
+li:hover{
+font-weight: 900;
+font-size:1vw ;
+color: #000; 
+}
+
+ul{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding: 10px;
+    width: 34.5rem;    
+}
+
+.container-background{
+    background-image: url("assets/laranja.png");
+    background-size: cover;
+    height: 83vh;
+}
+
+h2{
+    color: #fff;
+    text-transform: capitalize;
+    font-size:4.87rem; 
+    padding: 15% 0 0 12%;
+}
+h3{
+    color: #fff;
+    text-transform: uppercase;
+    font-size:2.18rem ;
+    font-weight: lighter;
+    padding: 2% 0 0 12%;
+}
+.container-imagens{
+    max-width: 1366px ;
+    margin: 0 auto;
+}   
+.box-imagens{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 5rem;
+}
+.box-imagens img{
+padding: 0.75rem;
+}
+footer{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    align-items: center;
+    height: 10vh;
+
+}
+.box-network{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width:20vw ; 
+     
+}
+.box-text{
+display: flex;
+}
+h4{
+    margin-right: 20px;
+}
+.paragraph{
+    width: 30vw;
+}
+@media(max-width:768px) {
+    section{
+        width: 100%;
+        flex-direction: column;
+        display:flex;    
+    }
+    section img{
+        width: 100%;
+    }
+    footer{
+        flex-direction: column;
+        height: 15vh;
+        margin-top: 5rem;
+    }
+    .paragraph{
+        width: 20vw;
+        
+    }
+    .box-text{
+        flex-direction: column;
+    }   
+} 
